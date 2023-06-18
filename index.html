@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!---------------------- FAVICON ------------------->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!---------------------- TITLE ------------------->
+    <title>BEAUTY</title>
+    <!---------------------- ICONS ------------------->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!---------------------- SWIPER ------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!---------------------- CSS ------------------->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <!---------------------- HEADER ------------------->
     <header>
       <nav class="nav row-center">
         <div class="nav-list row-center">
@@ -21,11 +35,11 @@
           </div>
           <div class="nav-first open-1" id="nav-first">
             <ul class="nav-ul row-center">
-              <li><a href="#" class="nav-a">Home</a></li>
-              <li><a href="#" class="nav-a">Shop</a></li>
-              <li><a href="#" class="nav-a">Pages</a></li>
-              <li><a href="#" class="nav-a">Bloc</a></li>
-              <li><a href="#" class="nav-a">Contact</a></li>
+              <li><a href="#home" class="nav-a">Home</a></li>
+              <li><a href="#shop" class="nav-a">Services</a></li>
+              <li><a href="#pages" class="nav-a">Steps</a></li>
+              <li><a href="#bloc" class="nav-a">Ingredients</a></li>
+              <li><a href="#contact" class="nav-a">Best Sellers</a></li>
             </ul>
           </div>
         </div>
@@ -37,12 +51,13 @@
           <a href="" class="nav-a nav-list-item">Register</a>
           <i class="fa-solid fa-magnifying-glass nav-list-item"></i>
           <i class="fa-solid fa-cart-shopping nav-list-item"></i>
-          
+          <i class="fa-solid fa-moon nav-list-item" id="toogle-theme"></i>
         </div>
       </nav>
     </header>
     <main>
-      <section class="home">
+      <!------------------------------ HOME -------------------------------------->
+      <section class="home" id="home">
         <div class="column-center home-sub">
           <h1 class="home-title">Bringing Out The Beauty in You</h1>
           <p class="home-subtitle">
@@ -57,7 +72,9 @@
           <img src="assets/img/home.png" alt="home" class="home-img" />
         </div>
       </section>
-      <section class="services-section column-center">
+
+      <!------------------------------ SERVICES -------------------------------------->
+      <section class="services-section column-center mb-100px" id="shop">
         <div class="services-div row-center">
           <img src="assets/img/services.jpg" alt="" class="services-img" />
           <div class="services-div-desc column-center">
@@ -96,7 +113,9 @@
           </div>
         </div>
       </section>
-      <section class="column-center text-center step-section">
+
+      <!------------------------------ STEPS -------------------------------------->
+      <section class="column-center text-center step-section mb-8" id="pages">
         <p class="label-intro mb-05">How Does It Work.</p>
         <h1 class="services-title mb-1">4 steps for your Skin care</h1>
         <p class="services-p mb-2 w-50">
@@ -154,185 +173,197 @@
         </div>
       </section>
 
-      <section class="column-center text-center mb-2">
+      <!------------------------------ INGREDIENTS -------------------------------------->
+      <section class="column-center text-center mb-8" id="bloc">
         <p class="label-intro mb-05">Ingredients</p>
         <h1 class="services-title mb-1">Product information</h1>
         <p class="services-p mb-2 w-50">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <br>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />
           doloremque laudantium,
         </p>
         <div class="div-ingre">
-          <img class="img-ingre" src="assets/img/ingredients.png" alt="">
+          <img class="img-ingre" src="assets/img/ingredients.png" alt="" />
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <article class="swiper-slide row-center">
-                <img class="swiper-img mr-2" src="assets/img/natural.webp" alt="">
+                <img
+                  class="swiper-img mr-2"
+                  src="assets/img/day1.webp"
+                  alt=""
+                />
                 <div class="column-center text-left-flex text-left">
                   <h4 class="services-title mb-05">DAY 1</h4>
                   <p class="step-p mb-05">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
                   </p>
                 </div>
               </article>
 
               <article class="swiper-slide row-center">
-                <img class="swiper-img mr-2" src="assets/img/natural.webp" alt="">
+                <img
+                  class="swiper-img mr-2"
+                  src="assets/img/day2.webp"
+                  alt=""
+                />
                 <div class="column-center text-left-flex text-left">
                   <h4 class="services-title mb-05">DAY 2</h4>
                   <p class="step-p mb-05">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
                   </p>
                 </div>
               </article>
 
               <article class="swiper-slide row-center">
-                <img class="swiper-img mr-2" src="assets/img/natural.webp" alt="">
+                <img
+                  class="swiper-img mr-2"
+                  src="assets/img/day3.webp"
+                  alt=""
+                />
                 <div class="column-center text-left-flex text-left">
                   <h4 class="services-title mb-05">DAY 3</h4>
                   <p class="step-p mb-05">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
                   </p>
                 </div>
               </article>
 
               <article class="swiper-slide row-center">
-                <img class="swiper-img mr-2" src="assets/img/natural.webp" alt="">
+                <img class="swiper-img mr-2" src="assets/img/day4.jpg" alt="" />
                 <div class="column-center text-left-flex text-left">
                   <h4 class="services-title mb-05">DAY 4</h4>
                   <p class="step-p mb-05">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem
                   </p>
                 </div>
               </article>
-
-
-              
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
         </div>
-
       </section>
 
-      <section class="column-center mb-2 section-bs">
+      <!------------------------------ BEST SELLERS -------------------------------------->
+      <section class="column-center mb-8 section-bs" id="contact">
         <p class="label-intro mb-05">Order Now</p>
         <h1 class="services-title mb-1">Our Best Sellers</h1>
         <div class="div-bs">
           <article class="card-bs column-center">
-            <img class="mb-2" src="assets/img/bs1.png" alt="">
-            <h4 class="services-title mb-05">RESCATE Equilibrante y Reanimante</h4>
+            <img class="mb-2" src="assets/img/bs1.png" alt="" />
+            <h4 class="services-title mb-05">
+              RESCATE Equilibrante y Reanimante
+            </h4>
             <div class="row-center">
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
-              <p class="services-p">
-                5.0
-              </p>
+              <p class="services-p">5.0</p>
             </div>
-            <h2 class="label-intro">
-              $199.99
-            </h2>
+            <h2 class="label-intro">$199.99</h2>
             <a href="" class="btn"> Add to car </a>
           </article>
           <article class="card-bs column-center">
-            <img class="mb-2" src="assets/img/bs1.png" alt="">
-            <h4 class="services-title mb-05">RESCATE Equilibrante y Reanimante</h4>
+            <img class="mb-2" src="assets/img/bs2.png" alt="" />
+            <h4 class="services-title mb-05">
+              ACEITE DE AGUACATE Nutritivo Y Regenerante
+            </h4>
             <div class="row-center">
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
-              <p class="services-p">
-                5.0
-              </p>
+              <p class="services-p">5.0</p>
             </div>
-            <h2 class="label-intro">
-              $199.99
-            </h2>
+            <h2 class="label-intro">$199.99</h2>
             <a href="" class="btn"> Add to car </a>
           </article>
           <article class="card-bs column-center">
-            <img class="mb-2" src="assets/img/bs1.png" alt="">
-            <h4 class="services-title mb-05">RESCATE Equilibrante y Reanimante</h4>
+            <img class="mb-2" src="assets/img/bs3.png" alt="" />
+            <h4 class="services-title mb-05">
+              ANTI-ESTRÍAS Regenerante y Cicatrizante
+            </h4>
             <div class="row-center">
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
               <i class="fa-solid fa-star star-slect-bs"></i>
-              <p class="services-p">
-                5.0
-              </p>
+              <p class="services-p">5.0</p>
             </div>
-            <h2 class="label-intro">
-              $199.99
-            </h2>
+            <h2 class="label-intro">$199.99</h2>
             <a href="" class="btn"> Add to car </a>
           </article>
         </div>
 
         <div class="div-leaf">
-          <img class="img-leaf" src="assets/img/green-leave.webp" alt="">
+          <img class="img-leaf" src="assets/img/green-leave.webp" alt="" />
+        </div>
+      </section>
+    </main>
 
+    <!------------------------------ FOOTER -------------------------------------->
+    <footer class="column-center" id="footer">
+      <div class="section-footer mb-2">
+        <div class="column-center column-start">
+          <h1>BEAUTY</h1>
+          <h2 class="label-intro">(88) - 123 456789</h2>
+          <p class="services-p mb-2">
+            MARCO R <br />
+            123 Main Street <br />
+            Anytown, NY 12345 <br />
+          </p>
         </div>
 
-      </section>
+        <div class="column-center column-start">
+          <h2 class="label-intro">Useful links</h2>
+          <ul class="nav-ul column-center">
+            <li><a href="#" class="nav-a">About</a></li>
+            <li><a href="#" class="nav-a">News</a></li>
+            <li><a href="#" class="nav-a">Partners</a></li>
+          </ul>
+        </div>
 
-      <footer class="column-center">
-        <div class="section-footer mb-2">
-          <div class="column-center column-start">
-            <h1>BEAUTY</h1>
-            <h2 class="label-intro">(88) - 123 456789 </h2>
-            <p class="services-p mb-2">
-              MARCO R <br>
-              123 Main Street <br>
-              Anytown, NY 12345 <br>
-            </p>
-          </div>
-    
-          <div class="column-center column-start">
-            <h2 class="label-intro">Useful links </h2>
-            <ul class="nav-ul column-center">
-              <li><a href="#" class="nav-a">About</a></li>
-              <li><a href="#" class="nav-a">News</a></li>
-              <li><a href="#" class="nav-a">Partners</a></li>
-            </ul>
-          </div>
-    
-          <div class="column-center column-start">
-            <h2 class="label-intro">Useful links </h2>
-            <ul class="nav-ul column-center">
-              <li><a href="#" class="nav-a">About</a></li>
-              <li><a href="#" class="nav-a">News</a></li>
-              <li><a href="#" class="nav-a">Partners</a></li>
-            </ul>
-          </div>
-    
-          <div class="column-center column-start">
-            <h2 class="label-intro">Follow us </h2>
-            <div class="row-center">
-              <div class="div-contact column-center mr-05"> <i class="fa-brands fa-facebook"></i></div>
-              <div class="div-contact column-center mr-05"> <i class="fa-brands fa-facebook"></i></div>
-              <div class="div-contact column-center mr-05"> <i class="fa-brands fa-facebook"></i></div>
-              <div class="div-contact column-center mr-05"> <i class="fa-brands fa-facebook"></i></div>
+        <div class="column-center column-start">
+          <h2 class="label-intro">Useful links</h2>
+          <ul class="nav-ul column-center">
+            <li><a href="#" class="nav-a">About</a></li>
+            <li><a href="#" class="nav-a">News</a></li>
+            <li><a href="#" class="nav-a">Partners</a></li>
+          </ul>
+        </div>
+
+        <div class="column-center column-start">
+          <h2 class="label-intro">Follow us</h2>
+          <div class="row-center">
+            <div class="div-contact column-center mr-05">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="div-contact column-center mr-05">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="div-contact column-center mr-05">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="div-contact column-center mr-05">
+              <i class="fa-brands fa-linkedin"></i>
             </div>
           </div>
         </div>
-        <p class="services-p mb-05">
-          MARCO RAMIREZ
-        </p>
-      </footer>
-
-
-      
-
-
-
+      </div>
+      <p class="services-p mb-05">MARCO RAMIREZ</p>
+    </footer>
+    <!------------------------------ SCROLL REVEAL -------------------------------------->
+    <script src="assets/js/scroll_reveal.min.js"></script>
+    <!------------------------------ SWIPER -------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!------------------------------ JAVASCRIPT -------------------------------------->
     <script src="assets/js/index.js"></script>
   </body>
 </html>
